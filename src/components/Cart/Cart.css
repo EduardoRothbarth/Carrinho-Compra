@@ -1,0 +1,38 @@
+.cart {
+    width: 100%; /*Vai ocupar 100% da tela*/
+    max-width: 330px; /*Mas nunca vai ultrapasar 330px*/
+    background-color: white;
+    height: 100vh; /*vh significa view height.. ira ocupar 100% do espaço visivel na tela*/
+    position: fixed; /*fixo pois ficara sempre no lado direito*/
+    top: 0; /*significa à partir do topo*/
+    right: 0; /*lado direito*/
+    padding: 100px 20px 20px; /*As informações estão atrás da header.. lembrando que a header esta com index 1,
+    se sobrepõem a tudo.. então criamos um espaçamento de 100px da borda superior, 20px dos lados e 20px da
+    parte inferior*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(110%, 0);
+    transition: all 400ms ease;
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.cart-resume {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 35px 0 15px;
+    border-top: 1px solid #ddd;
+}
+
+.cart-items .cart-items:last-child {
+    border-bottom: none;
+}
+
+.cart--active {
+    transform: translate(0, 0);
+}
+

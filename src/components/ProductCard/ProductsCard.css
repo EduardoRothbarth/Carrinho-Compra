@@ -1,0 +1,62 @@
+.product-card {
+    width: 100%; /*Foto do produto irá ocupar 100% do espaço disponível na tela*/
+    max-width: 300px; /*Limitar ao tamanho máximo de 300px*/
+    background-color: white;
+    display: flex; /*Com este comando a as informações de preço e título sairam da parte de baixo da imagem e vieram para o lado direito
+    .. horrivel, para corrigir, tem que ser utilizado o comando abaixo*/
+    flex-direction: column; /*transformou o conteudo do product-card em coluna*/
+    cursor: pointer;
+    margin: 0 auto; /*caso tenha apenas 1 item na linha de visualização, ele ficará centralizado */
+    position: relative;
+}
+
+.card__image {
+    width: 100%; /*Nem todas as imagens possuem a mesma dimensão, então isto é para padronizar, todas ocuparam 100% do espaço
+    disponível no enquadramento da foto/imagem*/
+}
+
+.card__infos {
+    padding: 20px; /*cria uma borda do espaço ocupado pelo texto para a borda do product-card*/
+    border-top: 1px solid #ddd; /*cria uma borda no parte superior, de 1px, borda solida*/
+}
+
+.card__price {
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card__title {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5; /*quando o títulos foi grande, ocupar mais de 1 linha de texto, este comando cria um espaçamento entre as linhas*/
+    font-weight: 500;
+}
+
+.button__add_cart {
+    position: absolute; /*posição absoluta dentro do product card*/
+    top: 0; /*Para sempre ficar na parte superior, independente do tamanha da tela*/
+    right: 0; /*Para que fique sempre na direita do product card*/
+    width: 45px;
+    height: 45px; /*width e height para darmos inicio a criação da "bolinha do carrinho compra dentro do product_card*/
+    margin: 12px 15px; /*as margens, 12px distancia da parte superior e inferior.. 15px distancia da laterais.. em relação ao product_card*/
+    color:#0c5dd6;
+    display: none; /*esconde o icone do carrinho compra dentro do product_card*/
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .button__add_cart {
+    display: flex; /*dentro da classe product-card, quando passar o mouse sobre (hover), a classe button_add_cart terá
+    display (visibilidade)*/
+}

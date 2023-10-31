@@ -1,0 +1,16 @@
+.products { 
+padding: 120px 20px 50px; /*Necessário esta instrução, pois de inicio, tudo o que esta dentro da estrutura Products 
+estava "escondido" atrás do header; com as margens de distanciamento, trazemos o conteudo para a visibiblidade, 
+isto ocorreu pois definimos o header como fixo.
+a distancia de 120px é da parte superior, o valor de 20px é das laterias e 50px da parte inferior*/
+
+display: grid; /*GRID é grade, visualização em grade... de primeiro momento, não muda nada no visual, as instruções 
+abaixo que irão agir*/
+
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*definimos que o template das grades serão em colunas,
+informamos que deve ser repetir(repeat) o comando de auto-preenchimento da tela (auto-fill), com uma instrução de 
+mínimo/máximo (minmax), aonde o tamanho mínimo do product_card será de 200px e o tamanho máximo será de 1fr que seria
+o equipamento ao espaço todo, 100%, da disponibilidade*/
+
+gap: 20px /*gap cria um espaço/lacuna/salto entre cada grid de product_card*/
+}

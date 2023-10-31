@@ -1,0 +1,29 @@
+.cart__button {
+    font-size: 1.5rem; /*Definimos o tamanho do ícone*/
+    display: flex; /*para que fica sempre na linha*/
+    align-items: center; /*para que fique alinhado dentro de seu espaço*/
+    justify-content: center; /*para que fique alinhado dentro de seu espaço*/
+    padding: 5px; /*uma margem/espaçamento/distância */
+    border: none; /*sem bordar ao redor do icone*/
+    background: none; /*sem cor, um transparente, então assume a cor que definimos na header*/
+    cursor: pointer;
+    position: relative; /*posição pode mudar de acordo com o tamanho da tela*/
+    margin-left: 20px; /*distancia entre o ícone e outra coisa que haja na mesma linha, a sua esquerda*/
+    color: #333;
+}
+
+.cart-status {
+    background-color: red;
+    width: 15px;
+    height: 15px; /*tanto o width quanto o height serão utilizados para criar a "bolinha"*/
+    position: absolute; /*a posição do carrinho é relativa, MAS, a da bolinha é absoluta em relação ao carrinho*/
+    top: 0;
+    left: 0; /*top e left serviram para trazer a "bolinha" que estava na direita para o lado esquerdo*/
+    color: white;
+    font-size: 11px; /*tamanho da fonte dentro da "bolinha"*/
+    font-weight: 600; /*intensidade da fonte.. quase um negrito*/
+    border-radius: 15px; /*transformou o que era um pixel (quadrado) em um circulo*/
+    display: flex; /*conteudo tem que ficar na linha, mas temq que ser alinhado ainda.*/
+    align-items: center;
+    justify-content: center; /*align-items + justify juntos alinharam o conteudo dentro da "bolinha"*/
+}

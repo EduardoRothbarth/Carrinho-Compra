@@ -1,0 +1,28 @@
+.loading {
+    font-size: 2rem;
+    margin: 200px auto 0; /*200px de distancia da parte superior do espaço que ocupa, 
+    dos lados auto, então é o mínimo que precisa e para a parte inferior 0px*/
+
+    animation: girando 1s linear infinite; /*temos que chamar a função girando que
+    criamos abaixo, o tempo de duração da animação é de 1 segundo, de forma infinita,
+    mas entre terminar um rotação e iniciar outra, fica um lag.. para resolver o atraso
+    utilizase a instrução linear, que mantera uma constancia na rotação*/
+
+    width: 100%; /*100% para que ocupe todo o espaço disponível*/
+}
+
+/*Criar aminação para que ele fique girando
+from (inicio).. to (até)
+propriedade transform.. ler a respeito para melhor compreensão
+rotate (rotacionar/girar)
+iniciando em 0graus e indo até 360graus*/
+@keyframes girando {
+    from {
+       transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}

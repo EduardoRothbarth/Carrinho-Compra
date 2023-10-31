@@ -1,0 +1,25 @@
+*** projeto veio dessas video aulas: https://www.youtube.com/watch?v=HSAlJJI6K_A&list=PLdtmpu_1ITQKuHMG4s0wUMa55OdsYeWw0 ***
+
+
+Criar o projeto em React, no terminal colocar a instrução:
+npx create-react-app .
+
+app é sintaxe para aplicativo.
+. é indicação do caminho, da pasta do arquivo.. já estamos na pasta correta, então é utiliza .
+
+
+Proximo passo é instalar algumas dependências:
+- React Icons: npm install react-icons
+
+
+Para rodar o projeto, no terminal, colocar a instrução npm start
+O index.jsx é o arquivo que cria a DOM.. mas.. todo o conteudo não esta nela
+esta dentro do arquivo App.jsx.
+O index.jsx importa tudo o que esta dentro do App.jsx
+
+
+Criado a pasta e o arquivo Header.
+Temos que importar o react para o arquivo.
+
+
+

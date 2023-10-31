@@ -1,0 +1,35 @@
+.search-bar {
+    display: flex; /*?? Se já tem isso no header, porque fazer igual aqui ??.. é ficar na mesma linha na página*/
+    background-color: white;
+    width: 100%;
+    max-width: 500px; /*o componente searchBar irá ocupar 100% da largura disponível da tela, mas ficará limitado a 500px*/
+    justify-content: space-between; /*o ícone estava ao lado da caixa texto do input, com isto, jogamos o ícone para fixar após a targeta branca de escrever.*/
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); /*sombra ao redor da caixa texto, aonde o primeiro valor (0) corresponde ao eixo X (linha vertical), 
+    o segundo valor (1) corresponde ao eixo (Y) linha horizontal, o terceiro valor (2) corresponde ao tamanho da sombra ao redor de tudo, 
+    o quarto valor (0) não compreendi, e depois é a cor da sombre, seguido da opacidade*/
+    gap: 13px; /*depois de termos criado a searchBar (que envolve tanto a caixa texto quanto o icone da lupa), definimos um gap (espaço/salto) de 13px
+    entre a searchBar e o ícone do carrinho*/
+    padding-right: 13px; /*serviu para criar um alinhamento*/
+}
+
+.search_input {
+    padding: 13px; /*a informação dentro da caixa texto terá uma distância/espaçamento/margem para a borda da caixa de 13px*/
+    flex-grow: 1; /*Até então, aparecia na tela a caixa texto placeholder e uma linha .searchbar, de forma separada, flex-grow 1, fez com que o input ocupe
+    todo o espaço disponível no container input.. basicamente ele fundiu os espaço, tornado tudo uma unica coisa*/
+    border: none; /*sem bordas na caixa texto*/
+    outline: none; /*outline é uma borda que aparece/surge quando clicamos no campo, estamos deixando sem também*/
+    font-size: 0.8rem; /*tamanho da fonte dentro da caixa texto*/
+    font-weight: 500px; /*?? Não entendi a finalidade*/
+    border-right: 1px solid #ddd; /*depois de ter estilizado o botão, feito a borda na caixa texto, no lado direito, para "separado" no icone da lupa,
+    largura da borda de 1px, do tipo solid de cor #ddd*/
+}
+
+.search__button {
+    background: none; /*sem cor no fundo do botão lupa*/
+    border: none; /*sem bordar ao redor do botão da lupa*/
+    font-size: 1rem; /*aumentamos um pouco o tamanho da lupa*/
+    display: flex; /*mesmo linha na página.. vai desconfigurar um pouco, então abaixo, mais comandos*/
+    align-items: center; /*centraliza*/
+    justify-content: center; /*centraliza*/
+    color: #333; /*é um cinza mais escuro*/
+}

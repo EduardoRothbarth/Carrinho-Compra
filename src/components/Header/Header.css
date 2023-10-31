@@ -1,0 +1,18 @@
+.header {
+    background-color: #fff159;
+    position: fixed; /*Sempre que rolarmos a pagina para baixo, o cabeçalho, ficará fixo*/
+    width: 100%; /*Precisamos desta instrução, de 100% a largura da tela, pois, após ter definido a posição como fixa, o background-color ficou somente "atrás" da searchBar*/
+    z-index: 1; /*Ao listar os produtos, observado que estes passavam por cima da header, o z-index define que o header se 
+    sobresai, fica na frente dos demais componentes da pagina*/
+}
+
+/*O que significa /. div
+a nossa header possui uma div className="container"
+esta div é FILHA, diretamente da nossa Header.. apenas e SOMENTE a(s) div que estiverem diretamente ligadas a nossa header estão o estilo abaixo.
+SE dentro da div className="container", criarmos uma outra div, ela seria "neta", então não é afetada pelo estilo aqui criado.*/
+.header > div {
+     display: flex; /*Necessário para fazer a searchBar ficar na mesma linha que o botão carrinho, sem isto, o botão fica uma linha abaixo da searchBar*/
+     justify-content: space-between; /*Para que a searchBar fique em um lado da pagina e o botão carrinho no outro lado*/
+     align-items: center; /*para que fiquem alinhados dentro dos seus espaços*/
+     padding: 20px; /*cria uma distância/espaço/margem, entre cada componente, então tanto a searchBar quanto o botão carrinho, possuem uma distância de 20px com relação as extremidades da pagina.*/
+}

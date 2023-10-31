@@ -1,3 +1,22 @@
+Este projeto é de autoria do canal Manual do Dev no youtube (https://www.youtube.com/watch?v=HSAlJJI6K_A&list=PLdtmpu_1ITQKuHMG4s0wUMa55OdsYeWw0),
+eu apenas assistir aos vídeos e fui reproduzindo o código por ele apresentado.
+
+Primeiro contato que tive com React, é interessante, mas, como ainda me falta muitos conceitos sobre
+construção de código, em muitas partes me senti perdido, entendi alguns pontos importantes, do que
+faz React ser agil na construção das aplicações.
+Mesmo assistindo e implementando o código, tive muitos erros na construção do código, mas isto é bom,
+pois errando é que se aprende.
+
+Legal é entender o que se pode fazer de interação para com o usuário.
+
+Fale a pena assitir e reproduzir.
+
+Este projeto eu subi para o VERCEL, esta disponível na internet para você acessar, interagir e ver
+como ficou. Acesse neste link: https://carrinho-compras-six.vercel.app/
+
+
+*** Texto abaixo foi gerado automaticamente pelo GITHUB
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

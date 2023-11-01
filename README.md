@@ -1,6 +1,5 @@
-Este projeto é de autoria do canal ### Manual do Dev no [youtube][2],
+Este projeto é de autoria do canal Manual do Dev no youtube (https://www.youtube.com/watch?v=HSAlJJI6K_A&list=PLdtmpu_1ITQKuHMG4s0wUMa55OdsYeWw0),
 eu apenas assistir aos vídeos e fui reproduzindo o código por ele apresentado.
-[2]: https://www.youtube.com/watch?v=HSAlJJI6K_A&list=PLdtmpu_1ITQKuHMG4s0wUMa55OdsYeWw0
 
 Primeiro contato que tive com React, é interessante, mas, como ainda me falta muitos conceitos sobre
 construção de código, em muitas partes me senti perdido, entendi alguns pontos importantes, do que
